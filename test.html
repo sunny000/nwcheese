@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Test - nwcheese.com</title><meta name="description" content="testing xhr"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://sunny000.github.io/nwcheese/test.html"><link rel="alternate" type="application/atom+xml" href="https://sunny000.github.io/nwcheese/feed.xml" title="nwcheese.com - RSS"><link rel="alternate" type="application/json" href="https://sunny000.github.io/nwcheese/feed.json" title="nwcheese.com - JSON"><meta property="og:title" content="Test"><meta property="og:image" content="https://sunny000.github.io/nwcheese/media/website/cheeses-2.jpeg"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="576"><meta property="og:site_name" content="nwcheese.com"><meta property="og:description" content="testing xhr"><meta property="og:url" content="https://sunny000.github.io/nwcheese/test.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://sunny000.github.io/nwcheese/assets/css/style.css?v=e5ad27e7b330f5e7f7fa9bfb74e8fca4"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://sunny000.github.io/nwcheese/test.html"},"headline":"Test","datePublished":"2025-04-17T07:36-07:00","dateModified":"2025-04-17T07:38-07:00","image":{"@type":"ImageObject","url":"https://sunny000.github.io/nwcheese/media/website/cheeses-2.jpeg","height":576,"width":1024},"description":"testing xhr","author":{"@type":"Person","name":"Sonny Smith","url":"https://sunny000.github.io/nwcheese/authors/sonny-smith/"},"publisher":{"@type":"Organization","name":"Sonny Smith","logo":{"@type":"ImageObject","url":"https://sunny000.github.io/nwcheese/media/website/cheeses-2.jpeg","height":576,"width":1024}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><header class="top js-header"><a class="logo" href="https://sunny000.github.io/nwcheese/"><img src="https://sunny000.github.io/nwcheese/media/website/cheeses-2.jpeg" alt="nwcheese.com" width="1024" height="576"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu" aria-haspopup="true" aria-expanded="false"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Menu</span></span></button><ul class="navbar__menu"><li><a href="https://sunny000.github.io/nwcheese/washington-cheesemakers.html" target="_self">Washington</a></li><li><a href="https://sunny000.github.io/nwcheese/oregon-cheesemakers.html" target="_self">Oregon</a></li><li><a href="https://sunny000.github.io/nwcheese/most-popular-sheep-breeds-for-cheese-making.html" target="_self">Popular Goat Breeds</a></li><li><a href="https://sunny000.github.io/nwcheese/" target="_self">Home</a></li><li><a href="https://sunny000.github.io/nwcheese/cheesemaker-directory.html" target="_self">Directory</a></li><li class="active"><a href="https://sunny000.github.io/nwcheese/test.html" target="_self">Test</a></li></ul></nav></header><main class="post"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Test</h1><div class="feed__meta content__meta"><a href="https://sunny000.github.io/nwcheese/authors/sonny-smith/" class="feed__author">Sonny Smith</a> <time datetime="2025-04-17T07:36" class="feed__date">April 17, 2025</time></div></div></header></div><div class="entry-wrapper content__entry"><p>testing xhr</p><p id="results"></p><p><script>document.getElementById('results').innerText = "";
+
+
+	function loadMessage() {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '/nwcheese/listFirms.php', true);
+		xhr.onload = function() {
+			console.log(xhr.sta);
+			if (xhr.status === 200) {
+				document.getElementById('results').innerHTML = xhr.responseText;
+			}
+		};
+		xhr.send();
+	}
+
+	function clearResults() {
+		document.getElementById('results').innerHTML = "";
+		alert("clearResults")
+		return;
+	}</script><script>loadMessage();</script></p></div><footer class="content__footer"><div class="entry-wrapper"><p class="content__updated">This article was updated on April 17, 2025</p><div class="content__actions"><div class="content__share"><button class="btn--icon content__share-button js-content__share-button"><svg width="20" height="20" aria-hidden="true"><use xlink:href="https://sunny000.github.io/nwcheese/assets/svg/svg-map.svg#share"></use></svg> <span>Share It</span></button><div class="content__share-popup js-content__share-popup"></div></div></div><div class="content__bio bio"><div><h3 class="h4 bio__name"><a href="https://sunny000.github.io/nwcheese/authors/sonny-smith/" rel="author">Sonny Smith</a></h3></div></div></div></footer></article></main><footer class="footer footer--glued"><div class="wrapper"><div class="footer__copyright"><p>Powered by Publii</p></div><button onclick="backToTopFunction()" id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://sunny000.github.io/nwcheese/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://sunny000.github.io/nwcheese/assets/js/scripts.min.js?v=700105c316933a8202041b6415abb233"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>

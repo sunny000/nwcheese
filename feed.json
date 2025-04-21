@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "nwcheese.com",
+    "description": "",
+    "home_page_url": "https://sunny000.github.io/nwcheese",
+    "feed_url": "https://sunny000.github.io/nwcheese/feed.json",
+    "user_comment": "",
+    "icon": "https://sunny000.github.io/nwcheese/media/website/cheeses-2.jpeg",
+    "author": {
+        "name": "Sonny Smith"
+    },
+    "items": [
+        {
+            "id": "https://sunny000.github.io/nwcheese/test.html",
+            "url": "https://sunny000.github.io/nwcheese/test.html",
+            "title": "Test",
+            "summary": "testing xhr",
+            "content_html": "<p>testing xhr</p>\n<p id=\"results\"></p>\n<p>\n<script>\n\tdocument.getElementById('results').innerText = \"\";\n\n\n\tfunction loadMessage() {\n\t\tvar xhr = new XMLHttpRequest();\n\t\txhr.open('GET', '/nwcheese/listFirms.php', true);\n\t\txhr.onload = function() {\n\t\t\tconsole.log(xhr.sta);\n\t\t\tif (xhr.status === 200) {\n\t\t\t\tdocument.getElementById('results').innerHTML = xhr.responseText;\n\t\t\t}\n\t\t};\n\t\txhr.send();\n\t}\n\n\tfunction clearResults() {\n\t\tdocument.getElementById('results').innerHTML = \"\";\n\t\talert(\"clearResults\")\n\t\treturn;\n\t}\n</script>\n<script>\n\tloadMessage();\n</script>\n</p>",
+            "author": {
+                "name": "Sonny Smith"
+            },
+            "tags": [
+            ],
+            "date_published": "2025-04-17T07:36:47-07:00",
+            "date_modified": "2025-04-17T07:38:49-07:00"
+        }
+    ]
+}

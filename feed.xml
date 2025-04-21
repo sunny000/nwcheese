@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <title>nwcheese.com</title>
+    <link href="https://sunny000.github.io/nwcheese/feed.xml" rel="self" />
+    <link href="https://sunny000.github.io/nwcheese" />
+    <updated>2025-04-17T07:38:49-07:00</updated>
+    <author>
+        <name>Sonny Smith</name>
+    </author>
+    <id>https://sunny000.github.io/nwcheese</id>
+
+    <entry>
+        <title>Test</title>
+        <author>
+            <name>Sonny Smith</name>
+        </author>
+        <link href="https://sunny000.github.io/nwcheese/test.html"/>
+        <id>https://sunny000.github.io/nwcheese/test.html</id>
+
+        <updated>2025-04-17T07:36:47-07:00</updated>
+            <summary>
+                <![CDATA[
+                    testing xhr
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>testing xhr</p>
+<p id="results"></p>
+<p>
+<script>
+	document.getElementById('results').innerText = "";
+
+
+	function loadMessage() {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '/nwcheese/listFirms.php', true);
+		xhr.onload = function() {
+			console.log(xhr.sta);
+			if (xhr.status === 200) {
+				document.getElementById('results').innerHTML = xhr.responseText;
+			}
+		};
+		xhr.send();
+	}
+
+	function clearResults() {
+		document.getElementById('results').innerHTML = "";
+		alert("clearResults")
+		return;
+	}
+</script>
+<script>
+	loadMessage();
+</script>
+</p>
+            ]]>
+        </content>
+    </entry>
+</feed>

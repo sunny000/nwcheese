@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sunny000.github.io/nwcheese/sitemap.xml
