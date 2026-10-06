@@ -20,12 +20,12 @@
       reconnectPeriod: 1000,
       // for more options and details, please refer to https://github.com/mqttjs/MQTT.js#mqttclientstreambuilder-options
     }
-    / Get the full URL of the current page
+    // Get the full URL of the current page
 const currentPage = window.location.href;
 console.log("Current Page URL:", currentPage);
     
     const topic = 'primebiz'
-    const payload = 'currentPage ' + d
+    const payload = currentPage  + d
     // https://github.com/mqttjs/MQTT.js#qos
     const qos = 0
 
